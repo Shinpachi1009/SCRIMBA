@@ -1,0 +1,6 @@
+
+cmd run command
+1 -> cd C:\Users\USER\Desktop\PHP\demo\crud(w login)
+2 -> php -S localhost:8888
+
+
