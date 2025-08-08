@@ -1,0 +1,49 @@
+php artisan serve
+
+php artisan make:controller NameController
+
+php artisan make:controller NameController --invokable
+
+Resource Controller is a special type of controller that provides a convinient way to handle CRUD operation
+php artisan make:controller NameController --resource
+php artisan make:controller NameController --api
+
+
+Blade is laravel's Templating engine that helps to build HTML views effieciently
+name.blade.php
+php artisan make:view name
+php artisan make:view foldername.name
+
+appServiceProvide - boot - sharing Data for All Views
+strtoupper - make all string uppercase  
+
+Components are reusable piece of UI that can be included in your blade views
+php artisan make:component name
+php artisan make:component name --view
+
+A component Slot is a placeholder where you can insert custom content when you use the component
+
+php artisan make:component SampleName
+
+Inline Component is a component which does not have its associated blade file, and HTML content is return from the component's class render() method rdirectly
+php artisam make:component SampleName --inline
+
+Migrate
+php artisan make:migration create_your_table_name_table
+ php artisan migrate --pretend
+
+php artisan list migrate
+php artisan migrate:status
+php artisan migrate:fresh
+php artisan migrate:refresh
+
+Eloquent ORM - object Relational Mapping
+php artisan make:model ModelName
+php artisan make:model ModelName -mc
+
+Factory
+php artisan make:factory FactoryName
+
+seeders
+php artisan make:seeder SeederName
+php artisan migrate:fresh --seed
